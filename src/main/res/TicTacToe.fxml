@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8"
+            xmlns:fx="http://javafx.com/fxml"
+            fx:controller="TicTacToeController">
+    <top>
+        <Button fx:id="play" onAction="#handlePlayClick" prefHeight="50" prefWidth="300.0">PLAY</Button>
+    </top>
+    <center>
+        <GridPane fx:id="gameBoard" BorderPane.alignment="CENTER">
+            <children>
+                <Button fx:id="topLeft" onAction="#handleSquareOneClick" prefHeight="100.0" prefWidth="100.0"/>
+                <Button fx:id="topCenter" onAction="#handleSquareTwoClick" prefHeight="100.0" prefWidth="100.0"
+                        GridPane.columnIndex="1"/>
+                <Button fx:id="topRight" onAction="#handleSquareThreeClick" prefHeight="100.0" prefWidth="100.0"
+                        GridPane.columnIndex="2"/>
+                <Button fx:id="midLeft" onAction="#handleSquareFourClick" prefHeight="100.0" prefWidth="100.0"
+                        GridPane.rowIndex="1"/>
+                <Button fx:id="midCenter" onAction="#handleSquareFiveClick" prefHeight="100.0" prefWidth="100.0"
+                        GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+                <Button fx:id="midRight" onAction="#handleSquareSixClick" prefHeight="100.0" prefWidth="100.0"
+                        GridPane.columnIndex="2" GridPane.rowIndex="1"/>
+                <Button fx:id="botLeft" onAction="#handleSquareSevenClick" prefHeight="100.0" prefWidth="100.0"
+                        GridPane.rowIndex="2"/>
+                <Button fx:id="botMid" onAction="#handleSquareEightClick" prefHeight="100.0" prefWidth="100.0"
+                        GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+                <Button fx:id="botRight" onAction="#handleSquareNineClick" prefHeight="100.0" prefWidth="100.0"
+                        GridPane.columnIndex="2" GridPane.rowIndex="2"/>
+            </children>
+        </GridPane>
+    </center>
+</BorderPane>
